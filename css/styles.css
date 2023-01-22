@@ -37,11 +37,16 @@ aside img {
 }
 
 aside a {
-  display: grid;
+  display: inline-grid;
   align-items: center;
   gap: 5px;
   grid-template-columns: 1fr 4fr;
   cursor: pointer;
+}
+
+aside a,
+aside p {
+  width: min-content;
 }
 
 .aside-second-list {
@@ -58,6 +63,7 @@ nav img {
   height: 25px;
   width: 25px;
   justify-self: flex-end;
+  cursor: pointer;
 }
 
 .search-section {
@@ -94,4 +100,24 @@ section {
 
 .aside-header p {
   font-size: 1.3rem;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-section {
+  color: black;
+  font-weight: bold;
+  display: inline-grid;
+  grid-template-columns: min-content min-content min-content;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.profile-section p {
+  white-space: nowrap;
 }
