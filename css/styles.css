@@ -1,0 +1,23 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 5fr;
+  min-height: 100vh;
+}
+
+aside {
+  background-color: blue;
+  grid-row: 1 / -1;
+}
+
+nav {
+  background-color: orangered;
+}
+
+section {
+  background-color: red;
+}
