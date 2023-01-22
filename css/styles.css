@@ -126,3 +126,44 @@ section {
 .profile-section p {
   white-space: nowrap;
 }
+
+.contact-section {
+  display: inline-grid;
+  grid-template-columns: 1fr 9fr;
+  justify-content: start;
+  gap: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.contact-section > div {
+  display: grid;
+  align-content: center;
+}
+
+.contact-section p:first-child {
+  font-size: 0.7rem;
+}
+
+.contact-section p {
+  font-weight: bold;
+}
+
+.navbar-buttons {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.navbar-buttons button {
+  cursor: pointer;
+  border: none;
+  background-color: #3392FF;
+  padding: 7px 19px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+}
