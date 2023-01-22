@@ -1,3 +1,7 @@
+:root {
+  --light-blue: #3F8EFC
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -10,8 +14,37 @@ body {
 }
 
 aside {
-  background-color: blue;
+  background: linear-gradient(to right, #3392FF, #2f6eff);
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
   grid-row: 1 / -1;
+}
+
+aside ul {
+  list-style: none;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+aside img {
+  width: 25px;
+  height: 25px;
+}
+
+aside a {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.aside-second-list {
+  align-content: flex-start;
 }
 
 nav {
@@ -21,3 +54,20 @@ nav {
 section {
   background-color: red;
 }
+
+.aside-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-header .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.aside-header p {
+  font-size: 1.3rem;
+}
+
