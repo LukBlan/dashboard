@@ -9,7 +9,7 @@
 
 body {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 5fr;
+  grid-template: 1fr 4fr / 1fr 4fr;
   min-height: 100vh;
 }
 
@@ -84,10 +84,6 @@ nav img {
   border-radius: 10px;
   border: none;
   height: 25px;
-}
-
-section {
-  background-color: #dfe7f5;
 }
 
 .aside-header {
@@ -169,15 +165,17 @@ section {
 }
 
 section {
+  background-color: #dfe7f5;
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 10px;
+  padding: 20px;
+  grid-template-columns: 5fr 1fr;
+  gap: 20px;
 }
 
-.projects-section {
+.projects-section, .announcement, .trending{
   display: grid;
   grid-template-rows: min-content 1fr;
-  padding: 20px 40px;
+  gap: 5px;
 }
 
 .projects {
@@ -192,5 +190,14 @@ section {
   background-color: white;
   box-shadow: 0 0 3px rgb(0 0 0 / 30%);
   border-radius: 5px;
-  height: 130px;
+}
+
+.extra-info-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.announcement-target {
+  border: 1px solid black;
 }
