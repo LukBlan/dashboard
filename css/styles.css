@@ -7,10 +7,14 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   display: grid;
   grid-template: 1fr 4fr / min-content 4fr;
-  min-height: 100vh;
+  height: 100%;
 }
 
 aside {
@@ -64,7 +68,8 @@ nav {
   z-index: 1;
 }
 
-nav img {
+nav a,
+.small-icon {
   height: 25px;
   width: 25px;
   justify-self: flex-end;
@@ -73,7 +78,7 @@ nav img {
 
 .search-section {
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: min-content 9fr;
   align-items: center;
   gap: 10px;
   padding-left: 5px;
@@ -114,7 +119,7 @@ nav img {
   font-weight: bold;
   display: inline-grid;
   grid-template-columns: min-content min-content min-content;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 20px;
   padding: 5px;
@@ -125,8 +130,8 @@ nav img {
 }
 
 .contact-section {
-  display: inline-grid;
-  grid-template-columns: 1fr 9fr;
+  display: grid;
+  grid-template-columns: min-content 9fr;
   justify-content: start;
   gap: 20px;
   padding-left: 20px;
@@ -151,8 +156,7 @@ nav img {
   grid-template-columns: min-content min-content min-content;
   gap: 20px;
   align-items: center;
-  justify-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .navbar-buttons button {
@@ -171,13 +175,14 @@ section {
   padding: 20px;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
+  overflow: scroll;
 }
 
 .projects {
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(170px, 1fr));
   grid-auto-rows: 1fr;
 }
 
@@ -186,6 +191,7 @@ section {
   background-color: white;
   box-shadow: 0 0 3px rgb(0 0 0 / 30%);
   border-radius: 5px;
+  gap: 10px;
 }
 
 .extra-info-section {
@@ -223,11 +229,28 @@ section {
 
 .trending-account {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: min-content 3fr;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .trending-account > div {
   display: grid;
+}
+
+.orange-border {
+  border-left: 8px solid orange;
+}
+
+.projects-section .target {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  align-content: center;
+}
+
+.projects-section .icons {
+  display: flex;
+  grid-template-columns: min-content min-content min-content;
+  gap: 10px;
+  justify-self: end;
 }
