@@ -9,7 +9,7 @@
 
 body {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 4fr;
+  grid-template: 1fr 4fr / min-content 4fr;
   min-height: 100vh;
 }
 
@@ -20,7 +20,8 @@ aside {
   color: white;
   font-weight: bold;
   display: grid;
-  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-rows: min-content min-content min-content;
+  gap: 60px;
   grid-row: 1 / -1;
 }
 
@@ -168,20 +169,14 @@ section {
   background-color: #dfe7f5;
   display: grid;
   padding: 20px;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
-}
-
-.projects-section, .announcement, .trending{
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  gap: 5px;
 }
 
 .projects {
   display: grid;
-  gap: 40px 30px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(130px, 1fr));
   grid-auto-rows: 1fr;
 }
@@ -195,13 +190,14 @@ section {
 
 .extra-info-section {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content;
   gap: 10px;
 }
 
 .announcement > div {
   display: grid;
   align-items: center;
+  grid-template-rows: min-content min-content min-content;
 }
 
 .announcement > div > div:nth-child(2n) {
@@ -217,4 +213,21 @@ section {
 
 .announcement p {
   font-size: .5rem;
+}
+
+.trending > div {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  font-size: 0.75rem;
+}
+
+.trending-account {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 5px;
+}
+
+.trending-account > div {
+  display: grid;
 }
