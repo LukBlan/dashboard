@@ -160,13 +160,19 @@ nav a,
 }
 
 .navbar-buttons button {
+  border: 2px solid #3392FF;
   cursor: pointer;
-  border: none;
   background-color: #3392FF;
   padding: 7px 19px;
   border-radius: 25px;
   color: white;
   font-weight: bold;
+}
+
+.navbar-buttons button:hover {
+  background-color: white;
+  border: 2px solid #3F8EFC;
+  color: #2f6eff;
 }
 
 section {
@@ -189,9 +195,17 @@ section {
 .target {
   padding: 15px;
   background-color: white;
-  box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+  box-shadow: 0 0 4px rgb(0 0 0 / 40%);
   border-radius: 5px;
   gap: 10px;
+  cursor: pointer;
+  transition: 0.03s;
+}
+
+.target:hover {
+  box-shadow: rgb(0 0 0 / 30%) 0 0 9px;
+  transform: scale(1.01);
+  transition: .05s;
 }
 
 .extra-info-section {
@@ -253,4 +267,8 @@ section {
   grid-template-columns: min-content min-content min-content;
   gap: 10px;
   justify-self: end;
+}
+
+.small-icon:hover {
+  fill: darkblue;
 }
