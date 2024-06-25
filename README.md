@@ -1,2 +1,2 @@
-## [Admin Dashboard](https://lukblan.github.io/admin-dashboard/)
-Basic admin dashboard with Grid
+## [Dashboard](https://lukblan.github.io/dashboard/)
+Basic admin dashboard with Css Grid
